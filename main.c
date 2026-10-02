@@ -2,17 +2,15 @@
 
 int main(void)
 {
-    char a;
-    int count = 0;
-    printf("Input the sentence : ");
-    while ((a= getchar()) != '\n')
-    {
-        if (a>='0' && a<= '9')
-            count++;
-    }
-    printf("There are %d digits!\n", count);
+    int a;
+    int sum = 0;
+    printf("input a number : ");
+    scanf("%d", &a);
+
+    for (int i = 0; i<=a; i++)
+        sum += i;
+    printf("The result is %d",sum);
     return 0;
-    
 }
 
 
