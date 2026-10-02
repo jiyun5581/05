@@ -2,15 +2,14 @@
 
 int main(void)
 {
-    int a;
-    printf("input an integer: ");
-    scanf("%d",&a);
-    if (a>0)
-        printf("positive");
-    else if (a == 0)
-        printf("zero");
+    int num;
+    printf("Input an integer:");
+    scanf("%d",&num);
+    if (num>0)
+        printf("Absolute value : %d\n",num);
     else
-        printf("negative");
+        printf("Absolute value : %d\n", 0-num);
     return 0;
 }
+
 
